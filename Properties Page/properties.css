@@ -82,7 +82,7 @@ body {
 
 @media screen and (min-width: 1600px) {
     .container {
-        max-width: ;
+        max-width: 1700px;
     }
     .left-container {
         padding-left: calc((100vw - 1480px) / 2)
@@ -392,7 +392,7 @@ section.make-it .form {
         .datalist {
 
             display: flex;
-            gap: 50px;
+            justify-content: space-between;
             margin-top: 50px;
 
                 p{
@@ -429,7 +429,7 @@ section.make-it .container {
 
         .form .personal-info {
             display: flex;
-            gap: 50px;
+            justify-content: space-between;
 
                  p {
                     font-size: 20px;
@@ -451,10 +451,11 @@ section.make-it .container {
             display: flex;
             gap: 50px;
             flex-grow: 1;
+            align-items: center;
 
             p {
                 color: white;
-                font-size: 20px;
+                font-size: 18px;
                 margin-bottom: 16px;
             }
             
