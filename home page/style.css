@@ -100,12 +100,85 @@ header .container {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
+
+    @media screen and (max-width: 1024px) {
+        padding: 20px;
+    }
+}
+
+header button {
+    font-size: 18px;
+    padding: 16px 24px;
+    border: 1px solid #262626;
+    background:  #141414;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+    &.burger {
+        padding: 0px;
+        border: 0px;
+        display: none;
+        transition: all 0.3s ease;
+
+        @media screen and (max-width: 1024px) {
+            display: block;
+        }
+
+        &.open {
+            transform: translateX(-180px);
+        }
+    }
+}
+
+
+header nav {
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        max-width: 0px;
+        right: 0px;
+        top: 0px;
+        background-color: #262626;
+        height: 100vh;
+        gap: 10px;
+        z-index: 99;
+        transition: all 0.5s ease-in-out;
+
+        ul {
+            flex-direction: column;
+            li a {
+                text-align: center;
+            }
+        }
+
+        button {
+            display: block!important;
+        }
+
+        &.open {
+            padding: 20px;
+            padding-top: 80px;
+            max-width: 200px;
+        }
+    }
+}
+
+header nav {
+    display: flex;
+
+    button {
+        display: none;
+    }
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     gap: 4px;
+
+    
 }
 
 header nav ul li a {
@@ -114,6 +187,7 @@ header nav ul li a {
     transition: all 0.3s ease;
     border: 1px solid  transparent;
     cursor: pointer;
+    display: block;
     padding: 14px 24px;
 }
 
@@ -123,12 +197,6 @@ header nav ul li a:hover {
     background:  #141414;
 }
 
-header button {
-    font-size: 18px;
-    padding: 16px 24px;
-    border: 1px solid #262626;
-    background:  #141414;
-}
 
 
 section.discovery {

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Real Estate</title>
         <link rel="stylesheet" href="./style.css" />
+        
     </head>
     <body>
         <div class="banner">
@@ -43,15 +45,21 @@
                             </a>
                         </li>
                     </ul>
+                    <button>
+                        Contact Us
+                    </button>
                 </nav>
 
+               
                 <button>
                     Contact Us
                 </button>
-
+                <button class="burger" id="burger" onclick="toggleBurger()">
+                    <img src="../images/burger.svg" />
+                </button>
             </div>
         </header>
-        <section class="discovery">
+        <!-- <section class="discovery">
             <div class="discovery-content left-container">
                 <h2>
                     Discover Your Dream Property with Estatein
@@ -447,6 +455,19 @@
                    
                 </div>
             </div>
-        </section>
+        </section> -->
     </body>
+    <script>
+        function toggleBurger() {
+            const button = document.getElementById('burger')
+            const nav = document.querySelector('header nav')
+            if (nav.classList.contains('open')) {
+                button.classList.remove('open')
+                nav.classList.remove('open')
+            } else {
+                button.classList.add('open')
+                nav.classList.add('open')
+            }
+        }
+    </script>
 </html>

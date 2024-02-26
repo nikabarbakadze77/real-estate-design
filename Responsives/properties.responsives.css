@@ -12,7 +12,7 @@
 
 @media screen and (min-width: 1600px) {
     .container {
-        max-width: ;
+        max-width: 1366px;
     }
     .left-container {
         padding-left: calc((100vw - 1480px) / 2)

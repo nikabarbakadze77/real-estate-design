@@ -470,18 +470,38 @@ section.make-it .container {
         }
 
         .contact-method {
-            input.tel {
-                display: none;
+            .inputs {
+                display: flex;
+                border-radius: 8px;
+                padding: 20px;
+                background-color: #262626;
             }
-        
             label {
                 display: flex;
                 gap: 13px;
                 align-items: center;
 
-                border-radius: 8px;
-                padding: 20px;
-                background-color: #262626;
+                span {
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 100%;
+                    border: 1px solid #703BF7;
+                    transition: background-color 0.3s ease-in-out;
+                    cursor: pointer;
+                }
+
+                input {
+                    background-color: #262626;
+                    border: none;
+                    outline: none;
+                    &[type='checkbox'] {
+                        display: none;
+                        &:checked + span {
+                            background-color: #703BF7;
+                        }
+                    }
+                }
 
                 b {
                     color: #999999;
@@ -496,14 +516,15 @@ section.make-it .container {
                 margin-bottom: 16px;
              }
 
-             input {
+            textarea {
                 border-radius: 8px;
                 background-color: #262626;
-                padding: 20px 24px 20px 126px;
+                padding: 10px;
                 border: none;
                 width: 100%;
+                resize: none;
                 height: 170px;
-             }
+            }
         }  
 
         .form {
