@@ -67,6 +67,24 @@ body {
 
 }
 
+.banner button {
+    @media screen and (max-width: 580px) {
+        width: 26px;
+        height: 26px;
+        right: 16px;
+    }
+}
+
+.banner h4 {
+    @media screen and (max-width: 500px) {
+        font-size: 13px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 8px;
+    }
+}
+
 
 .container {
     width: 100%;
@@ -197,3 +215,102 @@ header nav ul li a:hover {
     background:  #141414;
 }
 
+
+section.discovery .discovery-content {
+    @media screen and (max-width: 1024px) {
+        padding: 20px;
+    }
+    h2 {
+        @media screen and (max-width: 1024px) {
+            font-size: 40px;
+        }
+    }
+
+    p {
+        @media screen and (max-width: 1024px) {
+            font-size: 12px;
+        }
+    }
+}
+
+
+section.discovery .discovery-image img {
+    @media screen and (max-width: 1024px) {
+       width: 450px;
+       height: 800px;
+       object-fit: cover;
+    }
+
+    @media screen and (max-width: 980px) {
+        width: 300px;
+        height: 800px;
+        object-fit: cover;
+    }
+    
+    @media screen and (max-width: 840px) {
+        width: 250px;
+        height: 700px;
+        object-fit: cover;
+    }
+    
+}
+
+
+section.discovery {
+    @media screen and (max-width: 580px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .discovery-image img {
+        @media screen and (max-width: 580px) {
+            padding: 20px;
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+
+    .discovery-content .discover-label {
+        @media screen and (max-width: 580px) {
+            top: -200px;
+            right: 370px;
+        }
+
+        @media screen and (max-width: 500px) {
+            top: -200px;
+            right: 310px;
+        }
+
+        @media screen and (max-width: 400px) {
+            top: -200px;
+            right: 200px;
+        }
+
+    }
+
+    .discovery-content h2 {
+        @media screen and (max-width: 580px) {
+            font-size: 28px;
+            margin-top: 16px;
+        }
+    }
+
+    .discovery-content .button-group {
+        @media screen and (max-width: 580px) {
+            display: flex;
+            flex-direction: column;
+            
+
+            a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .discovery-content .statistics {
+        @Media screen and (max-width: 460px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
