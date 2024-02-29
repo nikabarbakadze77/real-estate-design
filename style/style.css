@@ -217,8 +217,14 @@ header nav ul li a:hover {
 
 
 section.discovery .discovery-content {
+    
+    @media screen and (max-width: 1200px) {
+        padding-left: 20px
+    }
+
     @media screen and (max-width: 1024px) {
         padding: 20px;
+        padding-top: 144px;
     }
     h2 {
         @media screen and (max-width: 1024px) {
@@ -235,9 +241,22 @@ section.discovery .discovery-content {
 
 
 section.discovery .discovery-image img {
+
+    @media screen and (max-width: 1200px) {
+        width: 500px;
+        height: 800px;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 1080px) {
+        width: 500px;
+        height: 800px;
+        object-fit: cover;
+    }
+
     @media screen and (max-width: 1024px) {
        width: 450px;
-       height: 800px;
+       height: 600px;
        object-fit: cover;
     }
 
@@ -252,25 +271,48 @@ section.discovery .discovery-image img {
         height: 700px;
         object-fit: cover;
     }
+
+    
+    @media screen and (max-width: 780px) {
+        padding: 20px;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    @media screen and (max-width: 580px) {
+        padding: 20px;
+        width: 100%;
+        border-radius: 12px;
+    }
     
 }
 
 
 section.discovery {
-    @media screen and (max-width: 580px) {
+    @media screen and (max-width: 780px) {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .discovery-image img {
-        @media screen and (max-width: 580px) {
-            padding: 20px;
-            width: 100%;
-            border-radius: 12px;
-        }
-    }
 
     .discovery-content .discover-label {
+
+
+        @media screen and (max-width: 750px) {
+            top: -200px;
+            right: 600px;
+        }
+
+        @media screen and (max-width: 780px) {
+            top: -200px;
+            right: 540px;
+        }
+
+        @media screen and (max-width: 650px) {
+            top: -200px;
+            right: 410px;
+        }
+
         @media screen and (max-width: 580px) {
             top: -200px;
             right: 370px;
@@ -281,6 +323,11 @@ section.discovery {
             right: 310px;
         }
 
+        @media screen and (max-width: 450px) {
+            top: -200px;
+            right: 250px;
+        }
+
         @media screen and (max-width: 400px) {
             top: -200px;
             right: 200px;
@@ -289,6 +336,12 @@ section.discovery {
     }
 
     .discovery-content h2 {
+
+        @media screen and (max-width: 1080px) {
+            font-size: 28px;
+            margin-top: 16px;
+        }
+
         @media screen and (max-width: 580px) {
             font-size: 28px;
             margin-top: 16px;
@@ -313,4 +366,78 @@ section.discovery {
             flex-direction: column;
         }
     }
+}
+
+
+section.search .search-item {
+
+    p {
+        @media  screen and (max-width: 840px) {
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
+    .search-image {
+        @media screen and (max-width: 840px) {
+            padding: 15px;
+        }
+    }
+}
+
+section.search {
+    @media screen and (max-width: 840px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-top: 50px;
+    }
+}
+
+
+section.featured-properties {
+    .container {
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+    }
+    
+    h3 {
+        @media screen and (max-width: 840px) {
+            font-size: 28px;
+        }
+    }
+
+    p {
+        @media screen and (max-width: 840px) {
+            font-size: 14px;
+        }
+    }
+
+    .featured-properties-windows {
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    .featured-text {
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    a {
+        @Media screen and (max-width: 450px) {
+            font-size: 12px;
+        }
+    }
+    
 }
