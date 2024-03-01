@@ -481,6 +481,10 @@ section.frequently-questions .container .scroll .scroll-icons .right {
     cursor: pointer;
 }
 
+section.frequently-questions {
+    padding-top: 150px;
+}
+
 section.start-today .container h3 {
     font-size: 48px;
     font-weight: 600;

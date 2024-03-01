@@ -242,6 +242,12 @@ section.discovery .discovery-content {
 
 section.discovery .discovery-image img {
 
+    @media screen and (max-width: 1400px) {
+        width: 500px;
+        height: 800px;
+        object-fit: cover;
+    }
+
     @media screen and (max-width: 1200px) {
         width: 500px;
         height: 800px;
@@ -386,6 +392,11 @@ section.search .search-item {
 }
 
 section.search {
+
+    @media screen and (max-width: 1400px) {
+        margin-top: 50px;
+    }
+    
     @media screen and (max-width: 840px) {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -423,7 +434,8 @@ section.featured-properties {
 
     .featured-properties-windows {
         @media screen and (max-width: 1024px) {
-            display: none;
+            display: flex;
+            flex-direction: column;
         }
     }
 
@@ -440,4 +452,249 @@ section.featured-properties {
         }
     }
     
+}
+
+
+section.rate {
+    .container {
+        @media screen and (max-width: 1200px) {
+            padding: 20px; 
+        }
+
+        h3 {
+            @media screen and (max-width: 840px) {
+                font-size: 28px;
+            }
+        }
+
+        .rate-text {
+            p {
+                @media screen and (max-width: 840px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .rate-windows {
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .rate-text {
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            @media screen and (max-width: 480px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+section.frequently-questions {
+    .container {
+        @Media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+
+        h3 {
+            @media screen and (max-width: 840px) {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .frequently-questions-text {
+
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            @media screen and (max-width: 1040px) {
+                font-size: 15px;
+            }
+
+            @media screen and (max-width: 970px) {
+                font-size: 12px;
+            }
+        }
+
+        p {
+            @media screen and (max-width: 840px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .frequently-questions-windows {
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+section.start-today {
+    .container {
+        @Media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+
+        h3 {
+            
+            @media screen and (max-width: 1150px) {
+                font-size: 30px;
+            }
+
+            @media screen and (max-width: 840px) {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .start-today-text {
+
+        @media screen and (max-width: 840px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        p {
+            @media screen and (max-width: 1150px) {
+                font-size: 15px;
+            }
+        }
+
+        a {
+            @media screen and (max-width: 1024px) {
+                font-size: 15px;
+            }
+
+            @media screen and (max-width: 950px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+footer {
+    .container {
+        @media screen and (max-width: 1200px) {
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 1170px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .email {
+            @Media screen and (max-width: 1170px) {
+                width: 50%;
+            }
+
+            @Media screen and (max-width: 680px) {
+                width: 60%;
+            }
+
+            @Media screen and (max-width: 580px) {
+                width: 70%;
+            }
+
+            @Media screen and (max-width: 500px) {
+                width: 80%;
+            }
+
+            
+            @Media screen and (max-width: 440px) {
+                width: 90%;
+            }
+
+            @Media screen and (max-width: 400px) {
+                width: 100%;
+            }
+        }
+
+        .footer-right-side {
+            @Media screen and (max-width: 770px) {
+                display: flex;
+                gap: 50px;
+            }
+
+            @Media screen and (max-width: 650px) {
+                display: flex;
+                gap: 30px;
+            }
+
+            .page-list {
+                p {
+                    @Media screen and (max-width: 770px) {
+                        font-size: 15px;
+                    }
+    
+                    @Media screen and (max-width: 650px) {
+                        font-size: 12px;
+                    }
+    
+                    @Media screen and (max-width: 560px) {
+                        font-size: 10px;
+                    }
+
+                    
+                    @Media screen and (max-width: 400px) {
+                        font-size: 8px;
+                    }
+                }
+
+                span {
+                    @media screen and (max-width: 650px) {
+                        font-size: 15px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+section.last {
+    @Media screen and (max-width: 1180px) {
+        padding: 20px;
+    }
+
+    .container {
+        @Media screen and (max-width: 840px) {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+
+        .last-text {
+            @media screen and (max-width: 840px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h5 {
+                @Media screen and (max-width: 380px) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
 }
