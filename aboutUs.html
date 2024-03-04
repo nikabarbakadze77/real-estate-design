@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Real Estate</title>
-        <link rel="stylesheet" href="./style/style.css" />
         <link rel="stylesheet" href="./style/AboutUs.css" />
+        <link rel="stylesheet" href="./style/style.css" />
     </head>
     <body>
         <div class="banner">
@@ -49,6 +49,9 @@
                 <button>
                     Contact Us
                 </button>
+                <button class="burger" id="burger" onclick="toggleBurger()">
+                    <img src="../images/burger.svg" />
+                </button>
             </div>
         </header>
         <section class="journey">
@@ -83,7 +86,7 @@
                 <img src="../images/ad49649fccdfce1e8a3d58bffa111a0d.png">
             </div>   
         </section>
-        <section class="values">
+        <!-- <section class="values"> 
             <div class="container">
                 <div class="values-text">
                     <div class="frame-images">
@@ -507,5 +510,18 @@
                 </div>
             </div>
         </section>
-    </body>    
+    </body>   
+    <script>
+        function toggleBurger() {
+            const button = document.getElementById('burger')
+            const nav = document.querySelector('header nav')
+            if (nav.classList.contains('open')) {
+                button.classList.remove('open')
+                nav.classList.remove('open')
+            } else {
+                button.classList.add('open')
+                nav.classList.add('open')
+            }
+        }
+    </script> 
 </html>

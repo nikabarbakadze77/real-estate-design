@@ -241,6 +241,10 @@ section.discovery .discovery-content {
 
 
 section.discovery .discovery-image img {
+    @media screen and (max-width: 1550px) {
+        width: 600px;
+        height: 750px;
+    }
 
     @media screen and (max-width: 1400px) {
         width: 500px;
@@ -695,6 +699,100 @@ section.last {
                     font-size: 13px;
                 }
             }
+        }
+    }
+}
+
+
+/* about-us responsive */
+
+header.container {
+    @Media screen and (max-width: 1200px) {
+        padding: 20px;
+    }
+}
+
+section.journey {
+    @media screen and (max-width: 740px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .journey-content {
+        
+        @media screen and (max-width: 1200px) {
+            padding-left: 20px
+        }
+    
+        @media screen and (max-width: 1024px) {
+            padding: 20px;
+            padding-top: 144px;
+        }
+        h2 {
+            @media screen and (max-width: 1200px) {
+                font-size: 44px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                font-size: 40px;
+            }
+
+        }
+    
+        p {
+         
+            @media screen and (max-width: 1200px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .journey-image img {
+        @media screen and (max-width: 1200px) {
+            width: 700px;
+            height: 550px;
+            object-fit: cover;
+        }
+    
+        @media screen and (max-width: 1080px) {
+            width: 650px;
+            height: 550px;
+            object-fit: cover;
+        }
+    
+        @media screen and (max-width: 1024px) {
+           width: 550px;
+           height: 550px;
+           object-fit: cover;
+        }
+    
+        @media screen and (max-width: 980px) {
+            width: 400px;
+            height: 550px;
+            object-fit: cover;
+        }
+        
+        @media screen and (max-width: 840px) {
+            width: 250px;
+            height: 700px;
+            object-fit: cover;
+        }
+    
+        
+        @media screen and (max-width: 780px) {
+            padding: 20px;
+            width: 100%;
+            border-radius: 12px;
+        }
+    
+        @media screen and (max-width: 580px) {
+            padding: 20px;
+            width: 100%;
+            border-radius: 12px;
         }
     }
 }
